@@ -1,0 +1,32 @@
+site_name: Lage instruksjonsvideo
+site_url: https://hiof.class.no/
+
+theme:
+  name: material
+  icon:
+    logo: material/video
+  palette:     
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Bytt til mørk modus
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Bytt til lys modus
+
+  features:
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
